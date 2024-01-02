@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css" type="text/css">
+    <title>OG Tags HTML</title>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://og-tags-sts.surge.sh/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ahad STS">
+    <meta property="og:description" content="Hello I am Abdul Ahad">
+    <meta property="og:image"
+        content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/og-tags-sts.surge.sh/My%20Blog%20Title/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F4f77b0fa-2861-4737-976a-92a9f81cd585.jpg%3Ftoken%3DdnzANFfoM6-jqZCguthPJFR5EsBm2r-UEHVOQ1VCwKs%26height%3D225%26width%3D225%26expires%3D33240182699/og.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="og-tags-sts.surge.sh">
+    <meta property="twitter:url" content="https://og-tags-sts.surge.sh/">
+    <meta name="twitter:title" content="Ahad STS">
+    <meta name="twitter:description" content="Hello I am Abdul Ahad">
+    <meta name="twitter:image"
+        content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/og-tags-sts.surge.sh/My%20Blog%20Title/https%3A%2F%2Fopengraph.b-cdn.net%2Fproduction%2Fdocuments%2F4f77b0fa-2861-4737-976a-92a9f81cd585.jpg%3Ftoken%3DdnzANFfoM6-jqZCguthPJFR5EsBm2r-UEHVOQ1VCwKs%26height%3D225%26width%3D225%26expires%3D33240182699/og.png">
+
+</head>
+
+<body>
+
+    <h1>Share this url on whatsapp or other chats for "Open Graph" view</h1>
+    <button onclick="copyUrl(event)">Copy Url</button>
+
+    <div class="imgCont">
+        <img src="./images/ahad.png" alt="Abdul Ahad">
+        <img src="./images/ahadsts.jfif" alt="Ahad STS">
+    </div>
+
+    <script>
+        function copyUrl(event) {
+
+            let url = window.location.href;
+            navigator.clipboard.writeText(url)
+            event.target.innerText = "Copied"
+            setTimeout(() => {
+                event.target.innerText = "Copy Url"
+            }, 1000)
+
+        }
+    </script>
+
+</body>
+
+</html>
